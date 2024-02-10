@@ -4,3 +4,70 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+    --main-fonts: 'inter-Variable';
+    --acent-fonts: 'PressStart2P-regular';
+    --main-fonts-weight: 400;
+    --title-fonts-weight: 700;
+    --acent-color: #000;
+    --background-color: #fff;
+    --lable-stroke: rgb(255, 255, 255, 0.5);
+    --mix-text-color: #fff;
+    --sparks-fill: red;
+    --heart-main-color: #000;
+    --bg-img: repeating-linear-gradient( 90deg,#d3d3d3 0 2px,rgba(0 0 0 / 0) 2px 4px), 
+    repeating-linear-gradient( 180deg, #d3d3d3 0 2px, rgba(0 0 0 / 0) 2px 4px), 
+    repeating-linear-gradient( to bottom, #e7e7e7 0.01%, #1a1a1a 100% );
+}
+
+:root.theme-dark {
+    --main-fonts: 'inter-Variable';
+    --acent-fonts: 'PressStart2P-regular';
+    --main-fonts-weight: 465;
+    --title-fonts-weight: 785;
+    --acent-color: #00CC14;
+    --background-color: #000;
+    --lable-stroke: rgba(0, 0, 0, 0.5);
+    --mix-text-color: #00cc14;
+    --sparks-fill: red;
+    --heart-main-color: #00cc14;
+    --bg-img: repeating-linear-gradient( 90deg,#000 0 2px,rgba(0 0 0 / 0) 2px 4px), 
+    repeating-linear-gradient( 180deg, #000 0 2px, rgba(0 0 0 / 0) 2px 4px), 
+    repeating-linear-gradient( to bottom, #007f0c 0.01%, #004306 100% );
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --main-fonts: 'inter-Variable';
+        --acent-fonts: 'PressStart2P-regular';
+        --main-fonts-weight: 400;
+        --title-fonts-weight: 700;
+        --acent-color: #000;
+        --background-color: #fff;
+        --lable-stroke: rgb(255, 255, 255, 0.5);
+        --mix-text-color: #fff;
+        --sparks-fill: red;
+        --heart-main-color: #000;
+        --bg-img: repeating-linear-gradient(90deg,#d3d3d3 0 2px,rgba(0 0 0 / 0) 2px 4px), 
+        repeating-linear-gradient( 180deg, #d3d3d3 0 2px, rgba(0 0 0 / 0) 2px 4px), 
+        repeating-linear-gradient( to bottom, #e7e7e7 0.01%, #1a1a1a 100% );
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-fonts: 'inter-Variable';
+        --acent-fonts: 'PressStart2P-regular';
+        --main-fonts-weight: 465;
+        --title-fonts-weight: 785;
+        --acent-color: #00CC14;
+        --background-color: #000;
+        --lable-stroke: rgba(0, 0, 0, 0.5);
+        --mix-text-color: #00cc14;
+        --sparks-fill: red;
+        --heart-main-color: #00cc14;
+        --bg-img: repeating-linear-gradient( 90deg,#000 0 2px,rgba(0 0 0 / 0) 2px 4px), 
+        repeating-linear-gradient( 180deg, #000 0 2px, rgba(0 0 0 / 0) 2px 4px), 
+        repeating-linear-gradient( to bottom, #007f0c 0.01%, #004306 100% );;
+    }
+  }
