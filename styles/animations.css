@@ -12,3 +12,123 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+@keyframes arrow {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(4px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+  @keyframes like-heart {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes sparks-any {
+    0% {
+      fill: var(--accent-fill-color);
+    }
+    50% {
+      fill: var(--accent-fill-color);
+    }
+    100% {
+      fill: var(--accent-fill-color);
+    }
+  }
+
+  .card__icon-button:focus-visible {
+    border: 2px solid var(--acent-color, #000);
+  }
+
+  .sparks {
+    fill: transparent;
+    transition-timing-function: linear;
+  }
+  
+  .main-body {
+    fill: transparent;
+    transition: fill 0.3s 0s;
+    transition-timing-function: linear;
+  }
+  
+  .contour {
+    transition: fill 0.1s 0s;
+    transition-timing-function: linear;
+  }
+  
+  .core {
+    fill: transparent;
+    transition: fill 0.3s 0.03s;
+    transition-timing-function: linear;
+  }
+  
+  .card__icon-button:hover .main-body {
+    fill: var(--heart-main-color, #000);
+    transition: fill 0.3s 0.05s;
+    transition-timing-function: linear;
+  }
+  
+  .card__icon-button:hover .core {
+    fill: var(--heart-main-color, #000);
+    transition: fill 0.3s 0s;
+    transition-timing-function: linear;
+  }
+  
+  .card__icon-button:active .main-body {
+    fill: var(--accent-fill-color, #000);
+    transition: fill 0.3s 0.05s;
+    transition-timing-function: linear;
+  }
+  
+  .card__icon-button:active .core {
+    fill: var(--accent-fill-color, red);
+    transition: fill 0.3s 0s;
+    transition-timing-function: linear;
+  }
+  
+  .like-icon.is-liked .core {
+    fill: var(--accent-fill-color, red);
+    transition: fill 0.3s 0s;
+    transition-timing-function: linear;
+  }
+  
+  .like-icon.is-liked .main-body {
+    fill: var(--accent-fill-color, red);
+    transition: fill 0.3s 0.05s;
+    transition-timing-function: linear;
+  }
+  
+  .like-icon.is-liked .contour {
+    fill: var(--accent-fill-color, red);
+    transition: fill 0.3s 0.06s;
+    transition-timing-function: linear;
+  }
+  
+  .like-icon.is-liked .heart {
+    animation-name: like-heart;
+    animation-duration: 0.3s;
+    animation-delay: 0.1s;
+    animation-timing-function: ease-in;
+    transform-origin: center;
+    animation-direction: alternate;
+  }
+  
+  .like-icon.is-liked .sparks {
+    animation-name: sparks-any;
+    animation-duration: 0.3s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+  }
