@@ -147,7 +147,11 @@
 .card__image {
   position: relative;
   overflow: hidden;
-  block-size: /*clamp(23.437rem, 16.3726rem + 30.1416vw, 43.5rem)*/ clamp(23.187rem, 16.0345rem + 30.5172vw, 43.5rem);
+  block-size: /*clamp(23.437rem, 16.3726rem + 30.1416vw, 43.5rem)*/ clamp(
+    23.187rem,
+    16.0345rem + 30.5172vw,
+    43.5rem
+  );
 }
 
 .card__image-area {
@@ -169,7 +173,7 @@
   mix-blend-mode: hard-light;
   text-shadow: -1px 0 var(--lable-stroke), 0 1px var(--lable-stroke),
     1px 0 var(--lable-stroke), 0 -1px var(--lable-stroke);
-    z-index: 10;
+  z-index: 10;
 }
 
 @supports (
@@ -257,7 +261,7 @@
   color: var(--mix-text-color, #000);
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 .button::after {
@@ -422,5 +426,3 @@ dialog::backdrop {
     padding: 30px 42px 30px 42px;
   }
 }
-
-
