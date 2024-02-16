@@ -6,12 +6,12 @@
 */
 :root.theme-light {
     --main-fonts: 'inter-Variable';
-    --acent-fonts: 'PressStart2P-regular';
+    --acent-fonts: 'PressStart2P';
     --main-fonts-weight: 400;
     --title-fonts-weight: 700;
     --acent-color: #000;
     --background-color: #fff;
-    --lable-stroke: rgb(255, 255, 255, 0.5);
+    --lable-stroke: rgb(255, 255, 255, 1);
     --mix-text-color: #fff;
     --sparks-fill: red;
     --heart-main-color: #000;
@@ -22,12 +22,12 @@
 
 :root.theme-dark {
     --main-fonts: 'inter-Variable';
-    --acent-fonts: 'PressStart2P-regular';
+    --acent-fonts: 'PressStart2P';
     --main-fonts-weight: 465;
     --title-fonts-weight: 785;
     --acent-color: #00CC14;
     --background-color: #000;
-    --lable-stroke: rgba(0, 0, 0, 0.5);
+    --lable-stroke: rgba(0, 0, 0, 1);
     --mix-text-color: #00cc14;
     --sparks-fill: red;
     --heart-main-color: #00cc14;
@@ -39,12 +39,12 @@
 @media (prefers-color-scheme: light) {
     :root {
         --main-fonts: 'inter-Variable';
-        --acent-fonts: 'PressStart2P-regular';
+        --acent-fonts: 'PressStart2P';
         --main-fonts-weight: 400;
         --title-fonts-weight: 700;
         --acent-color: #000;
         --background-color: #fff;
-        --lable-stroke: rgb(255, 255, 255, 0.5);
+        --lable-stroke: rgb(255, 255, 255, 1);
         --mix-text-color: #fff;
         --sparks-fill: red;
         --heart-main-color: #000;
@@ -57,12 +57,12 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --main-fonts: 'inter-Variable';
-        --acent-fonts: 'PressStart2P-regular';
+        --acent-fonts: 'PressStart2P';
         --main-fonts-weight: 465;
         --title-fonts-weight: 785;
         --acent-color: #00CC14;
         --background-color: #000;
-        --lable-stroke: rgba(0, 0, 0, 0.5);
+        --lable-stroke: rgba(0, 0, 0, 1);
         --mix-text-color: #00cc14;
         --sparks-fill: red;
         --heart-main-color: #00cc14;
